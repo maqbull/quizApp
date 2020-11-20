@@ -9,8 +9,13 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import App from './App.vue'
 
 Vue.use(BootstrapVue)
-Vue.config.productionTip = false
+Vue.config.productionTip = true
 
+// module.exports = {
+//   publicPath: process.env.NODE_ENV === 'production'
+//     ? '/quizApp/'
+//     : '/'
+// }
 new Vue({
   render: h => h(App),
 }).$mount('#app')
